@@ -10,3 +10,7 @@ git clone https://github.com/Rick1125/vimconfig.git .vim
 git config user.name "Rick1125"
 
 git remote set-url origin git@github.com:Rick1125/vimconfig.git
+
+ssh-keygen -t rsa -C "rick1125@gmail.com"
+
+and goto https://github.com/settings/ssh
