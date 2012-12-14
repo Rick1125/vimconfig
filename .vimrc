@@ -911,3 +911,6 @@ let otl_use_thlnk=0
 "let g:loaded_unite=1
 "let g:loaded_neocomplcache=1
 "let g:loaded_vimshell=1
+
+"evervim developer token
+let g:evervim_devtoken='S=s1:U=abe9:E=142f096c047:C=13b98e59447:P=1cd:A=en-devtoken:H=a4bfe04e83ebb4feead845b30659c8f4'
