@@ -14,3 +14,5 @@ git remote set-url origin git@github.com:Rick1125/vimconfig.git
 ssh-keygen -t rsa -C "rick1125@gmail.com"
 
 and goto https://github.com/settings/ssh
+
+git submodule foreach git pull origin master
