@@ -1,3 +1,163 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+
+[submodule "bundle/csscomb"]
+	path = bundle/csscomb
+	url = https://github.com/miripiruni/CSScomb-for-Vim.git
+
+[submodule "bundle/drawit"]
+	path = bundle/drawit
+	url = https://github.com/vim-scripts/DrawIt.git
+
+[submodule "bundle/evervim"]
+	path = bundle/evervim
+	url = https://github.com/kakkyz81/evervim.git
+
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+    url = https://github.com/pangloss/vim-javascript.git
+
+[submodule "bundle/neobundle"]
+	path = bundle/neobundle
+    url = https://github.com/Shougo/neobundle.vim
+
+[submodule "bundle/neocompl-snippets"]
+	path = bundle/neocompl-snippets
+	url = https://github.com/Shougo/neocomplcache-snippets-complete.git
+
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.git
+
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+    url = https://github.com/scrooloose/nerdcommenter.git
+
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+
+[submodule "bundle/open-browser"]
+	path = bundle/open-browser
+	url = https://github.com/tyru/open-browser.vim.git
+
+[submodule "bundle/vimerl"]
+	path = bundle/vimerl
+	url = https://github.com/oscarh/vimerl.git
+
+[submodule "bundle/piv"]
+	path = bundle/piv
+	url = https://github.com/spf13/PIV.git
+
+[submodule "bundle/ragtag"]
+	path = bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+    url = https://github.com/msanders/snipmate.vim.git
+
+[submodule "bundle/splice"]
+	path = bundle/splice
+	url = https://github.com/sjl/splice.vim.git
+
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+    url = https://github.com/tomtom/tlib_vim
+
+[submodule "bundle/trag"]
+	path = bundle/trag
+	url = https://github.com/tomtom/trag_vim.git
+
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = https://github.com/Shougo/unite.vim.git
+
+[submodule "bundle/vcscommand"]
+	path = bundle/vcscommand
+	url = git://repo.or.cz/vcscommand.git
+
+[submodule "bundle/viki"]
+	path = bundle/viki
+	url = https://github.com/tomtom/viki_vim.git
+
+[submodule "bundle/vikitask"]
+	path = bundle/vikitask
+	url = https://github.com/tomtom/vikitasks_vim.git
+
+[submodule "bundle/erlang-skeletons"]
+	path = bundle/erlang-skeletons
+    url = https://github.com/aerosol/vim-erlang-skeletons
+
+[submodule "bundle/nerdtreetabs"]
+	path = bundle/nerdtreetabs
+    url = https://github.com/jistr/vim-nerdtree-tabs.git
+
+[submodule "bundle/pathogen"]
+	path = bundle/pathongen
+	url = https://github.com/tpope/vim-pathogen
+    
+[submodule "bundle/rebar"]
+	path = bundle/rebar
+	url = https://github.com/mbbx6spp/vim-rebar.git
+
+[submodule "bundle/ref"]
+	path = bundle/ref
+	url = https://github.com/thinca/vim-ref.git
+
+[submodule "bundle/surround"]
+	path = bundle/surround
+    url = https://github.com/tpope/vim-surround
+
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+    url = https://github.com/tpope/vim-repeat
+
+[submodule "bundle/symfony"]
+	path = bundle/symfony
+	url = https://github.com/docteurklein/vim-symfony.git
+
+[submodule "bundle/twig"]
+	path = bundle/twig
+    url = https://github.com/beyondwords/vim-twig.git
+
+[submodule "bundle/xdebug"]
+	path = bundle/xdebug
+    url = https://github.com/joonty/vim-xdebug
+
+[submodule "bundle/organizor"]
+	path = bundle/organizor
+	url = https://github.com/hsitz/VimOrganizer.git
+
+[submodule "bundle/outliner"]
+	path = bundle/outliner
+	url = https://github.com/vimoutliner/vimoutliner.git
+
+[submodule "bundle/webapi"]
+	path = bundle/webapi
+    url = https://github.com/mattn/webapi-vim
+
+[submodule "bundle/plenote"]
+	path = bundle/plenote
+	url = https://github.com/mattn/vimplenote-vim.git
+
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc
+
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = https://github.com/Shougo/vimshell.git
+
+[submodule "bundle/vimshell-ssh"]
+	path = bundle/vimshell-ssh
+	url = https://github.com/ujihisa/vimshell-ssh.git
+
+[submodule "bundle/wiki"]
+	path = bundle/wiki
+	url = https://github.com/vim-scripts/vimwiki.git
