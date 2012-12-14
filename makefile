@@ -3,7 +3,8 @@ vimproc=bundle/vimproc/autoload/vimproc_unix.so
 .PHONY: init
 all: $(vimproc)
 	git pull origin master
-	git submodule foreach git pull origin master
+	git submodule update
+#	git submodule foreach git pull origin master
 #	test ~/.vimrc; ln -sf `pwd` ~/.vim
 #	test ~/.vim; ln -sf `pwd`/.vimrc ~
 
