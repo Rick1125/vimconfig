@@ -8,6 +8,8 @@ all: $(vimproc)
 #	test ~/.vim; ln -sf `pwd`/.vimrc ~
 
 init:
+	git config user.name "Rick1125"
+	git remote set-url origin git@github.com:Rick1125/vimconfig.git
 	git submodule init
 	git submodule update
 
