@@ -122,10 +122,6 @@
 	path = bundle/twig
 	url = https://github.com/beyondwords/vim-twig.git
 
-[submodule "bundle/xdebug"]
-	path = bundle/xdebug
-	url = https://github.com/joonty/vim-xdebug
-
 [submodule "bundle/organizor"]
 	path = bundle/organizor
 	url = https://github.com/hsitz/VimOrganizer.git
