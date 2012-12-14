@@ -11,7 +11,7 @@ init:
 	git remote set-url origin git@github.com:Rick1125/vimconfig.git
 	git submodule init
 	git submodule update
-	ln -sf `pwd` ~/.vim
+	rm ~/.vim && ln -sf `pwd` ~/.vim
 	ln -sf `pwd`/.vimrc ~
 
 $(vimproc):
