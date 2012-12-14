@@ -58,7 +58,7 @@ endif
 set history=5000
 
 "set runtimepath=~/Downloads/vim,$VIMRUNTIME
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
@@ -841,7 +841,8 @@ if MySys() == "unix"
 endif
 
 "vimshell
-nmap <C-D> :vnew \| VimShell<cr>
+"nmap <C-D> :vnew \| VimShell<cr>
+"inoremap <C-D> exit
 
 """""""""""""""""""""""""""""""""""""""""""""NEOCOMPLCACHE"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "neocomplcache
