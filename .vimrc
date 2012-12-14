@@ -841,8 +841,8 @@ if MySys() == "unix"
 endif
 
 "vimshell
-"nmap <C-D> :vnew \| VimShell<cr>
-"inoremap <C-D> exit
+nmap <leader><C-d> :vnew \| VimShell<cr>
+inoremap <C-d> exit
 
 """""""""""""""""""""""""""""""""""""""""""""NEOCOMPLCACHE"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "neocomplcache
