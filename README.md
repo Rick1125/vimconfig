@@ -3,16 +3,12 @@ vimconfig
 
 vim configuration
 
-git clone https://github.com/Rick1125/vimconfig.git .vim
+git clone https://github.com/Rick1125/vimconfig.git
 
-(cd ~;ln -s .vim/.vimrc)
+make init && make
 
-git config user.name "Rick1125"
-
-git remote set-url origin git@github.com:Rick1125/vimconfig.git
-
+#####
+make sure you already made a public key for commit
 ssh-keygen -t rsa -C "rick1125@gmail.com"
 
-and goto https://github.com/settings/ssh
-
-git submodule foreach git pull origin master
+goto https://github.com/settings/ssh see more details 
