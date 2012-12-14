@@ -22,10 +22,6 @@
 	path = bundle/neobundle
 	url = https://github.com/Shougo/neobundle.vim
 
-[submodule "bundle/neocompl-snippets"]
-	path = bundle/neocompl-snippets
-	url = https://github.com/Shougo/neocomplcache-snippets-complete.git
-
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
@@ -161,3 +157,6 @@
 [submodule "bundle/wiki"]
 	path = bundle/wiki
 	url = https://github.com/vim-scripts/vimwiki.git
+[submodule "bundle/neosnippet"]
+	path = bundle/neosnippet
+	url = https://github.com/Shougo/neosnippet
