@@ -7,8 +7,7 @@ all: $(vimproc)
 #	git submodule foreach git pull origin master
 
 init: link config
-	git submodule init
-	git submodule update
+	git submodule update --init
 
 $(vimproc):
 	(cd bundle/vimproc;make -f make_unix.mak)
