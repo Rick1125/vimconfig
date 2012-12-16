@@ -1,3 +1,5 @@
+username="Rick1125"
+git_repository=git@github.com:Rick1125/vimconfig.git
 vimproc=bundle/vimproc/autoload/vimproc_unix.so
 
 .PHONY: init link config
@@ -13,8 +15,8 @@ $(vimproc):
 	(cd bundle/vimproc;make -f make_unix.mak)
 
 config:
-	git config user.name "Rick1125"
-	git remote set-url origin git@github.com:Rick1125/vimconfig.git
+	git config user.name ${username}
+	git remote set-url origin ${git_repository}
 
 link:
 	rm ~/.vim && ln -sf `pwd` ~/.vim
