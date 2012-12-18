@@ -19,5 +19,5 @@ config:
 	git remote set-url origin ${git_repository}
 
 link:
-	rm ~/.vim && ln -sf `pwd` ~/.vim
+	rm -fr ~/.vim && ln -sf `pwd` ~/.vim
 	ln -sf `pwd`/.vimrc ~
