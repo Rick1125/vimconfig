@@ -92,6 +92,7 @@ let g:mapleader = ";"
 "Fast saving
 nmap <leader>x :xa!<cr>
 nmap <leader>w :w!<cr>
+
 "cmap w!!... causes delays when typing 'w'in command mode, at least in terminal versions. There is a better scriptbit:
 cmap w!! w !sudo tee % >/dev/null
 "cnoreabbrev <expr> w!! ((getcmdtype() is# ':' && getcmdline() is# 'w!!')?('!sudo tee % >/dev/null'):('w!!'))
@@ -501,7 +502,7 @@ set viminfo='10,"100,:20,%,n~/.viminfo
 "set viminfo+=!
 
 " Buffer - reverse everything ... :)
-map <F9> ggVGg?
+" map <F9> ggVGg?
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backup
@@ -621,6 +622,7 @@ map <leader>n <plug>NERDTreeTabsToggle<cr>
 if has("autocmd") && v:version>600
   autocmd vimenter * NERDTree
   autocmd vimenter * wincmd p
+  autocmd VimEnter * set buftype=""
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
   autocmd BufNewFile,BufRead *.todo so ~/.vim/syntax/amido.vim
@@ -673,8 +675,8 @@ nmap <leader>sj   :rightbelow new<cr>
 map <F2> :%s/s*$//g<cr>:noh<cr>''
 map <F3> :Tlist<cr>
 map <F4> :NERDTreeToggle<cr>
-map <F8> <Esc>:EnableFastPHPFolds<Cr>
-map <C-F8> <Esc>:DisablePHPFolds<Cr>
+map <F8> <esc>:EnableFastPHPFolds<cr>
+map <C-F8> <esc>:DisablePHPFolds<cr>
 map <F9> :e $HOME/.vimrc<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -859,10 +861,10 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 " Plugin key-mappings.
-imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-smap <C-k>     <Plug>(neocomplcache_snippets_expand)
-inoremap <expr><C-g>     neocomplcache#undo_completion()
-inoremap <expr><C-l>     neocomplcache#complete_common_string()
+imap <C-k>     <plug>(neocomplcache_snippets_expand)
+smap <C-k>     <plug>(neocomplcache_snippets_expand)
+inoremap <expr><c-g>     neocomplcache#undo_completion()
+inoremap <expr><c-l>     neocomplcache#complete_common_string()
 
 " SuperTab like snippets behavior.
 "imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
