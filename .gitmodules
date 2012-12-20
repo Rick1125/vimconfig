@@ -141,3 +141,6 @@
 [submodule "bundle/trag"]
 	path = bundle/trag
 	url = https://github.com/tomtom/trag_vim.git
+[submodule "bundle/gmail"]
+	path = bundle/gmail
+	url = https://github.com/yuratomo/gmail.vim.git
