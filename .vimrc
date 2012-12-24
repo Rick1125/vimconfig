@@ -28,7 +28,7 @@ let performance_mode=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set terminal color to 256 get same colorscheme as gui
-"set t_Co=256
+set t_Co=256
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -200,7 +200,7 @@ map <leader>$ :syntax sync fromstart<cr>
 
 "Highlight current
 hi CursorLine cterm=none ctermbg=black
-hi TabLine cterm=none ctermbg=grey ctermfg=blue
+hi TabLine cterm=none ctermbg=darkgrey ctermfg=red
 "hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 if exists("&cursorline")
     set cursorline
@@ -916,3 +916,20 @@ let otl_use_thlnk=0
 
 "evervim developer token
 let g:evervim_devtoken='S=s1:U=abe9:E=142f096c047:C=13b98e59447:P=1cd:A=en-devtoken:H=a4bfe04e83ebb4feead845b30659c8f4'
+
+"Gmail settings
+let g:gmail_imap = 'imap.gmail.com:993'
+let g:gmail_smtp = 'smtp.gmail.com:465'
+let g:gmail_user_name = 'rick1125@gmail.com'
+let g:gmail_default_encoding = "utf-8"
+
+" w3m settings
+let g:w3m#external_browser = 'firefox'
+let g:w3m#homepage = "http://www.google.com/"
+let g:w3m#search_engine = 
+    \ 'http://www.google.com/search?ei=' . &encoding . '&aq=&oq=&p='
+
+function! VimwikiLinkHandler(link)
+    call w3m#Open(g:w3m#OPEN_TAB, a:link)
+    return 1
+endfunction
