@@ -24,7 +24,7 @@
 " User configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " turn off nice effect on status bar title
-let performance_mode=0
+let performance_mode=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set terminal color to 256 get same colorscheme as gui
