@@ -28,7 +28,7 @@ let performance_mode=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set terminal color to 256 get same colorscheme as gui
-"set t_Co=256
+set t_Co=256
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
