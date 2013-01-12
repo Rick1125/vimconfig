@@ -283,6 +283,7 @@ set shortmess=a
 "Format the statusline
 " Nice statusbar
 if performance_mode
+	set laststatus=2
 else
 	set laststatus=2
 	set statusline=
@@ -933,3 +934,8 @@ function! VimwikiLinkHandler(link)
     call w3m#Open(g:w3m#OPEN_TAB, a:link)
     return 1
 endfunction
+
+"" Powerline settings
+let g:Powerline_symbols = 'unicode'
+let g:Powerline_cache_dir = expand("~/.vim/cache/powerline")
+let g:Powerline_stl_path_style = 'full'
