@@ -60,6 +60,7 @@ set history=5000
 "set runtimepath=~/Downloads/vim,$VIMRUNTIME
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+"call pathogen#incubate()
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 "Enable filetype plugin

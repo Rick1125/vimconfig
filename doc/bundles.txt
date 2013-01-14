@@ -1,0 +1,9 @@
+*bundles* *bundles.txt*            Installed Bundles
+
+
+Lists the currently installed bundles. Also see the |bundle-log|.
+Last updated by vim-update-bundles on 2012年 12月 14日 星期五 16:47:09 CST.
+
+  PLUGIN                           VERSION                RELEASE DATE
+------------------------------------------------------------------------
+Aborted: 'git rm bundle/fuzzyfinder' in /home/rick/workspaces/vimconfig exited with code 128

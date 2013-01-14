@@ -1,0 +1,27 @@
+*bundle-log.txt*                   Bundle Install Log
+
+
+Logs bundle install activity. Also see the list of installed |bundles|.
+
+2012年 12月 14日 星期五 16:47:09 CST by vim-update-bundles 0.82+
+ Del |tabular|                  7f6f1723a27fe
+ Del |open-browser|             v0.0.7-119-gf2f506f
+ Del |neocomplcache|            ver.7.1-305-g0cbcac0
+ Del |viki|                     4.04-2-ga80b43d
+ Del |rebar|                    v0.1.0-1-gf0650db
+ Del |tlib|                     1.04-1-g29828f0
+ Del |vimerl|                   0.2-86-g31f99c5
+ Del |nerdtree|                 4.2.0-89-g3a8310a
+ Del |vimshell-ssh|             fa869bf439ec8
+ Del |javascript|               395f8901b34cc
+ Del |surround|                 v1.90-27-g1a73f60
+ Del |unite|                    ver.4.0-185-gbb41434
+ Del |vcscommand|               v1.99.46
+ Del |ref|                      unite-ref-v0.1.1-36-g8fb7b5f
+ Del |twig|                     869c05195086d
+ Del |plenote|                  109ee99f2e186
+ Del |repeat|                   v1.0-12-gaeb3d6c
+ Del |trag|                     0.11-1-g250c729
+ Del |fuzzyfinder|              1ac56f7a3b247
+ Aborted: 'git rm bundle/fuzzyfinder' in /home/rick/workspaces/vimconfig exited with code 128
+
