@@ -5,6 +5,7 @@ vimproc=bundle/vimproc/autoload/vimproc_unix.so
 .PHONY: init link config
 all: $(vimproc)
 	git pull origin master
+	git submodule update --init
 	git submodule update --recursive
 #git submodule foreach git pull origin master
 
