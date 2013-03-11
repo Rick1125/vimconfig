@@ -416,14 +416,14 @@ map 0 ^
   
 "Tabularize shortcut
 if exists(':Tabularize') 
-  nmap <leader>a= :Tabularize /=<cr>
-  vmap <leader>a= :Tabularize /=<cr>
-  nmap <leader>a: :Tabularize /:<cr>
-  vmap <leader>a: :Tabularize /:<cr>
-  nmap <leader>a. :Tabularize /=><cr>
-  vmap <leader>a. :Tabularize /=><cr>
-  nmap <leader>al :Tabularize /\|<cr>
-  vmap <leader>al :Tabularize /\|<cr>
+  nnoremap <leader>a= :Tabularize /=<cr>
+  vnoremap <leader>a= :Tabularize /=<cr>
+  nnoremap <leader>a: :Tabularize /:<cr>
+  vnoremap <leader>a: :Tabularize /:<cr>
+  nnoremap <leader>a. :Tabularize /=><cr>
+  vnoremap <leader>a. :Tabularize /=><cr>
+  nnoremap <leader>al :Tabularize /\|<cr>
+  vnoremap <leader>al :Tabularize /\|<cr>
 
   inoremap <silent> <Bar> <Bar><Esc>:call <SID>align()<CR>a
 
