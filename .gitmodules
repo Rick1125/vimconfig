@@ -159,3 +159,6 @@
 [submodule "bundle/tables"]
 	path = bundle/tables
 	url = https://github.com/nvie/vim-rst-tables.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
