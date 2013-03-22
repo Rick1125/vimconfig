@@ -165,3 +165,6 @@
 [submodule "bundle/php-namespace"]
 	path = bundle/php-namespace
 	url = https://github.com/arnaud-lb/vim-php-namespace.git
+[submodule "bundle/tmuxify"]
+	path = bundle/tmuxify
+	url = https://github.com/mhinz/vim-tmuxify.git
