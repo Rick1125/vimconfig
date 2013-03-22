@@ -168,3 +168,6 @@
 [submodule "bundle/tmuxify"]
 	path = bundle/tmuxify
 	url = https://github.com/mhinz/vim-tmuxify.git
+[submodule "bundle/forrest"]
+	path = bundle/forrest
+	url = https://github.com/hlissner/vim-forrestgump.git
