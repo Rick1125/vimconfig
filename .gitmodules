@@ -162,3 +162,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/php-namespace"]
+	path = bundle/php-namespace
+	url = https://github.com/arnaud-lb/vim-php-namespace.git

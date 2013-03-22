@@ -416,13 +416,9 @@ map 0 ^
   
 "Tabularize shortcut
 if exists(':Tabularize') 
-  nnoremap <leader>a= :Tabularize /=<cr>
   vnoremap <leader>a= :Tabularize /=<cr>
-  nnoremap <leader>a: :Tabularize /:<cr>
   vnoremap <leader>a: :Tabularize /:<cr>
-  nnoremap <leader>a. :Tabularize /=><cr>
   vnoremap <leader>a. :Tabularize /=><cr>
-  nnoremap <leader>al :Tabularize /\|<cr>
   vnoremap <leader>al :Tabularize /\|<cr>
 
   inoremap <silent> <Bar> <Bar><Esc>:call <SID>align()<CR>a
@@ -648,9 +644,15 @@ endif
 """"""""""""""""""""""""""""""
 "let Tlist_Ctags_Cmd = "/usr/bin/ctags-exuberant"
 "let Tlist_Sort_Type = "name"
-let Tlist_Use_Right_Window = 1
+"let Tlist_Use_Right_Window = 1
 "let Tlist_Show_Menu = 1
-map <leader>t :Tlist<cr>
+"map <leader>t :Tlist<cr>
+let g:tagbar_width = 30
+nnoremap <silent> <leader>t :TagbarToggle<cr>
+
+"PHP Namespace
+inoremap <silent> <leader>u <C-O>:call PhpInsertUse()<cr>
+noremap <silent> <leader>u :call PhpInsertUse()<cr>
 
 "Tab configuration
 map <leader>tn :tabnew<cr>
