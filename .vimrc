@@ -60,9 +60,9 @@ set history=5000
 "set runtimepath=~/Downloads/vim,$VIMRUNTIME
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
-"call pathogen#incubate()
+call pathogen#incubate()
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
 "Enable filetype plugin
 filetype on
 if has("eval") && v:version>=600
@@ -91,7 +91,7 @@ let mapleader = ";"
 let g:mapleader = ";"
 
 "Fast saving
-nmap <leader>x :xa!<cr>
+"nmap <leader>x :xa!<cr>
 nmap <leader>w :w!<cr>
 
 "cmap w!!... causes delays when typing 'w'in command mode, at least in terminal versions. There is a better scriptbit:
@@ -942,3 +942,14 @@ endfunction
 let g:Powerline_symbols = 'unicode'
 let g:Powerline_cache_dir = expand("~/.vim/cache/powerline")
 let g:Powerline_stl_path_style = 'full'
+
+"" enhanced commentify
+let g:EnhCommentifyUserBindings = 'yes'
+let g:EnhCommentifyUseAltKeys = 'no'
+let g:EnhCommentifyTraditionalMode = 'N'
+let g:EnhCommentifyMultiPartBlocks = 'yes'
+nmap <leader>x <esc><plug>Comment
+nmap <leader>X <esc><plug>DeComment
+vmap <leader>x <esc><plug>VisualComment
+vmap <leader>X <esc><plug>VisualDeComment
+
