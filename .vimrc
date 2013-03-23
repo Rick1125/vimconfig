@@ -943,13 +943,3 @@ let g:Powerline_symbols = 'unicode'
 let g:Powerline_cache_dir = expand("~/.vim/cache/powerline")
 let g:Powerline_stl_path_style = 'full'
 
-"" enhanced commentify
-let g:EnhCommentifyUserBindings = 'yes'
-let g:EnhCommentifyUseAltKeys = 'no'
-let g:EnhCommentifyTraditionalMode = 'N'
-let g:EnhCommentifyMultiPartBlocks = 'yes'
-nmap <leader>x <esc><plug>Comment
-nmap <leader>X <esc><plug>DeComment
-vmap <leader>x <esc><plug>VisualComment
-vmap <leader>X <esc><plug>VisualDeComment
-

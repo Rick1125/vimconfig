@@ -119,9 +119,6 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
-[submodule "bundle/vcscommand"]
-	path = bundle/vcscommand
-	url = git://repo.or.cz/vcscommand.git
 [submodule "bundle/ref"]
 	path = bundle/ref
 	url = https://github.com/thinca/vim-ref.git
