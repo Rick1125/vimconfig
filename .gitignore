@@ -1,4 +1,5 @@
 cache
 view
-/bundle
+bundle/*
 .netrwhist
+doc/tags
