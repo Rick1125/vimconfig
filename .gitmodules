@@ -167,3 +167,6 @@
 [submodule "bundle/forrest"]
 	path = bundle/forrest
 	url = https://github.com/hlissner/vim-forrestgump.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
