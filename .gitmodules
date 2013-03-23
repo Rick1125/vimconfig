@@ -18,10 +18,6 @@
 	path = bundle/neobundle
 	url = https://github.com/Shougo/neobundle.vim
 
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-
 [submodule "bundle/piv"]
 	path = bundle/piv
 	url = https://github.com/spf13/PIV.git
