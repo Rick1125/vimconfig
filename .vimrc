@@ -681,7 +681,7 @@ map <F3> :Tlist<cr>
 map <F4> :NERDTreeToggle<cr>
 map <F8> <esc>:EnableFastPHPFolds<cr>
 map <C-F8> <esc>:DisablePHPFolds<cr>
-map <F9> :e $HOME/.vimrc<cr>
+"map <F9> :e $HOME/.vimrc<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype generic
