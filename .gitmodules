@@ -185,3 +185,6 @@
 [submodule "bundle/SrcExpl"]
 	path = bundle/SrcExpl
 	url = https://github.com/wesleyche/SrcExpl
+[submodule "bundle/obsession"]
+	path = bundle/obsession
+	url = https://github.com/tpope/vim-obsession.git
