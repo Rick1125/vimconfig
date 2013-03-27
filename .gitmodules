@@ -182,3 +182,6 @@
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion
+[submodule "bundle/SrcExpl"]
+	path = bundle/SrcExpl
+	url = https://github.com/wesleyche/SrcExpl
