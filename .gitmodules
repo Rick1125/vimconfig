@@ -80,9 +80,6 @@
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
 	url = https://github.com/Shougo/neosnippet
-[submodule "bundle/vdebug"]
-	path = bundle/vdebug
-	url = https://github.com/joonty/vdebug.git
 [submodule "bundle/vimshell-ssh"]
 	path = bundle/vimshell-ssh
 	url = https://github.com/ujihisa/vimshell-ssh.git
