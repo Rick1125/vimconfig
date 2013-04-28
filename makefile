@@ -15,9 +15,9 @@ type=mac
 endif
 	(cd bundle/vimproc;make -f make_$(type).mak)
 
-update: $(vimproc)
-#git submodule update --recursive
-	git submodule update --init
+update:
+	git submodule update --recursive
+#git submodule update --init
 
 config:
 	git config user.name ${username}
