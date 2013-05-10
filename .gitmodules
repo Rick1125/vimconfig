@@ -185,9 +185,6 @@
 [submodule "bundle/obsession"]
 	path = bundle/obsession
 	url = https://github.com/tpope/vim-obsession.git
-[submodule "bundle/yankring"]
-	path = bundle/yankring
-	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/startify"]
 	path = bundle/startify
 	url = https://github.com/mhinz/vim-startify
