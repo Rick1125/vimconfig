@@ -50,10 +50,6 @@
 	path = bundle/pathogen
 	url = https://github.com/tpope/vim-pathogen
     
-[submodule "bundle/symfony"]
-	path = bundle/symfony
-	url = https://github.com/docteurklein/vim-symfony.git
-
 [submodule "bundle/organizor"]
 	path = bundle/organizor
 	url = https://github.com/hsitz/VimOrganizer.git

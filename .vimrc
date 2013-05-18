@@ -357,7 +357,7 @@ nmap <C-k> <C-W>k
 nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 nmap <C-x> <C-W>x
-nmap <C-p> <C-W>p
+"nmap <C-p> <C-W>p
 
 imap <c-b> <left>
 imap <c-j> <down>
