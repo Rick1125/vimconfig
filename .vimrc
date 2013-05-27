@@ -945,3 +945,4 @@ let g:Powerline_stl_path_style = 'full'
 
 " git fugitive
 nmap <silent> <leader>gm :Gcommit<cr>
+nmap <silent> <leader>gc :GitCommitFile<cr>

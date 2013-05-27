@@ -339,7 +339,7 @@ expanded, see |'delimitMate_expand_space'| and
 |'delimitMate_expand_cr'|:
 
 Expand <Space> to: >
-
+ 
                     <Space><Space><Left>  |  You get
                   ====================================
                               (|)         |    ( | )
