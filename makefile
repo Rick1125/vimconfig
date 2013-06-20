@@ -17,6 +17,7 @@ endif
 
 update:
 #	git submodule update --recursive
+	git config http.sslVerify false
 	git submodule update --init
 
 config:
