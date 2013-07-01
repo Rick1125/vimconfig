@@ -946,3 +946,11 @@ let g:Powerline_stl_path_style = 'full'
 " git fugitive
 nmap <silent> <leader>gm :Gcommit<cr>
 nmap <silent> <leader>gc :GitCommitFile<cr>
+
+" Multiple Cursors
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-m>'
+let g:multi_cursor_skip_key='<C-l>'
+let g:multi_cursor_quit_key='<C-j>'
+

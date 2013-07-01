@@ -187,3 +187,9 @@
 [submodule "bundle/rpmspec"]
 	path = bundle/rpmspec
 	url = https://github.com/vim-scripts/spec.vim.git
+[submodule "bundle/python"]
+	path = bundle/python
+	url = https://github.com/klen/python-mode
+[submodule "bundle/multiple-cursors"]
+	path = bundle/multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
