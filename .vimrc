@@ -415,11 +415,11 @@ iab xname Rick Lee
 map 0 ^
   
 "Tabularize shortcut
-if exists(':Tabularize') 
-  vnoremap <leader><leader>a= :Tabularize /=<cr>
-  vnoremap <leader><leader>a: :Tabularize /:<cr>
-  vnoremap <leader><leader>a. :Tabularize /=><cr>
-  vnoremap <leader><leader>al :Tabularize /\|<cr>
+"if exists(':Tabularize') 
+  vnoremap <leader>a= :Tabularize /=<cr>
+  vnoremap <leader>a: :Tabularize /:<cr>
+  vnoremap <leader>a. :Tabularize /=><cr>
+  vnoremap <leader>al :Tabularize /\|<cr>
 
   inoremap <silent> <Bar> <Bar><Esc>:call <SID>align()<CR>a
 
@@ -433,7 +433,7 @@ if exists(':Tabularize')
       call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
     endif
   endfunction
-endif
+"endif
 
 "Move a line of text using control
 nmap <M-j> mz:m+<cr>`z
