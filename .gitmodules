@@ -196,3 +196,6 @@
 [submodule "bundle/sexy_scroller"]
 	path = bundle/sexy_scroller
 	url = https://github.com/joeytwiddle/sexy_scroller.vim
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = https://github.com/mattn/emmet-vim

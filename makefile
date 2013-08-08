@@ -17,12 +17,12 @@ endif
 
 update:
 #	git submodule update --recursive
-	git config http.sslVerify false
-	git submodule update --init
+	@git submodule update --init
 
 config:
-	git config user.name ${username}
-	git remote set-url origin ${git_repository}
+	@git config http.sslVerify false
+	@git config user.name ${username}
+	@git remote set-url origin ${git_repository}
 
 install: config
 	rm -fr ~/.vim && ln -sf `pwd` ~/.vim
