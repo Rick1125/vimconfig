@@ -70,9 +70,6 @@
 	path = bundle/vimshell
 	url = https://github.com/Shougo/vimshell.git
 
-[submodule "bundle/wiki"]
-	path = bundle/wiki
-	url = https://github.com/vim-scripts/vimwiki.git
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
 	url = https://github.com/Shougo/neosnippet
