@@ -954,3 +954,7 @@ let g:multi_cursor_prev_key='<C-m>'
 let g:multi_cursor_skip_key='<C-l>'
 let g:multi_cursor_quit_key='<C-j>'
 
+let g:no_plugin_maps = 1
+let g:no_rst_table_maps = 1
+noremap <silent> <leader>k :call ReformatTable()<CR>
+noremap <silent> <leader><s-k> :call ReflowTable()<CR>
