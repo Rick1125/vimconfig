@@ -196,3 +196,9 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode
+[submodule "bundle/splitjoin"]
+	path = bundle/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule "bundle/json"]
+	path = bundle/json
+	url = https://github.com/elzr/vim-json

@@ -1,5 +1,5 @@
-cache/
-view/
-bundle/
+/cache/
+/view/
+/bundle/
 .netrwhist
 doc/tags
