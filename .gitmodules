@@ -202,3 +202,6 @@
 [submodule "bundle/json"]
 	path = bundle/json
 	url = https://github.com/elzr/vim-json
+[submodule "bundle/xml"]
+	path = bundle/xml
+	url = https://github.com/othree/xml.vim
