@@ -651,6 +651,34 @@ let g:tlist_go_settings = 'go;v:variable;f:function;p:package;c:constant;t:type'
 "map <leader>t :Tlist<cr>
 let g:tagbar_width = 30
 nnoremap <silent> <leader>t :TagbarToggle<cr>
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
 
 "PHP Namespace
 inoremap <silent> <leader>u <C-O>:call PhpInsertUse()<cr>
