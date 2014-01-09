@@ -179,8 +179,8 @@ if has("gui_running")
 	if v:version > 601 
 		"colorscheme ps_color
 		"colorscheme default
-		"colorscheme navajo-night
-		colorscheme molokai
+    "colorscheme navajo-night
+    colorscheme molokai
 	endif
 else
 	if v:version > 601 
@@ -767,6 +767,7 @@ let use_xhtml = 1
 "endfunction
 "au BufNewFile,BufRead *.py vmap <F7> :call Python_Eval_VSplit()<cr>
 
+let g:pymode_trim_whitespaces = 1
 
 """"""""""""""""""""""""""""""
 " => Cheetah section
