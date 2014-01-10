@@ -1011,4 +1011,3 @@ let g:splitjoin_join_mapping = ''
 
 nnoremap <silent> <leader>j :SplitjoinJoin<cr>
 nnoremap <silent> <leader>s :SplitjoinSplit<cr>
-
