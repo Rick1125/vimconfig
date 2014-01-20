@@ -208,3 +208,12 @@
 [submodule "bundle/gocode"]
 	path = bundle/gocode
 	url = https://github.com/Blackrush/vim-gocode.git
+[submodule "bundle/dash"]
+	path = bundle/dash
+	url = https://github.com/rizzatti/dash.vim
+[submodule "bundle/greper"]
+	path = bundle/greper
+	url = https://github.com/rizzatti/greper.vim
+[submodule "bundle/funcoo"]
+	path = bundle/funcoo
+	url = https://github.com/rizzatti/funcoo.vim

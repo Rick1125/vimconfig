@@ -200,7 +200,7 @@ map <leader>4 :set ft=javascript<cr>
 map <leader>$ :syntax sync fromstart<cr>
 
 "Highlight current
-hi CursorLine cterm=none ctermbg=black
+hi CursorLine cterm=none ctermbg=darkgrey
 hi TabLine cterm=none ctermbg=darkgrey ctermfg=red
 "hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 if exists("&cursorline")
@@ -645,7 +645,7 @@ endif
 "let Tlist_Ctags_Cmd = "/usr/bin/ctags-exuberant"
 "let Tlist_Sort_Type = "name"
 "let Tlist_Use_Right_Window = 1
-let g:tlist_go_settings = 'go;v:variable;f:function;p:package;c:constant;t:type'
+"let g:tlist_go_settings = 'go;v:variable;f:function;p:package;c:constant;t:type'
 
 "let Tlist_Show_Menu = 1
 "map <leader>t :Tlist<cr>

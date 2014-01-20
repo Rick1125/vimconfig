@@ -16,7 +16,6 @@ endif
 	(cd bundle/vimproc;make -f make_$(type).mak)
 
 update:
-#	git submodule update --recursive
 	@git submodule update --init
 
 config:
