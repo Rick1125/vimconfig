@@ -59,8 +59,8 @@ set history=5000
 
 "set runtimepath=~/Downloads/vim,$VIMRUNTIME
 runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#incubate()
+call pathogen#infect('bundle/{}') 
+"call pathogen#incubate()
 call pathogen#helptags()
 "call pathogen#runtime_append_all_bundles()
 "Enable filetype plugin
@@ -165,6 +165,7 @@ if has("gui_running")
 	set guioptions-=L
 	set guioptions-=r
 	set guioptions-=R
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 
 	if MySys()=="win32"
 		"start gvim maximized
@@ -919,25 +920,22 @@ inoremap <C-d> exit
   "let g:neocomplcache_omni_patterns = {}
 "endif
 
-"let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
-"let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
-" let g:acp_enableAtStartup = 0
-
 """""""""""""""""""New Config""""""""""""""""""""""""""""""""""""""""""""
 "<CR>: close popup and save indent.
-inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
 "<TAB>: completion. NO USE with snipmate
 "inoremap <expr><TAB> pumvisible() ? \"\<C-n>" : \"\<TAB>" ********************
 "<C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-Y> neocomplcache#close_popup()
-inoremap <expr><C-e> neocomplcache#cancel_popup()
+"
+"inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
+"inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+"inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+"inoremap <expr><C-Y> neocomplcache#close_popup()
+"inoremap <expr><C-e> neocomplcache#cancel_popup()
+
 "inoremap <expr><Enter> pumvisible() ? neocomplcache#close_popup()."\<C-n>" : \"\<Enter>"
 "inoremap <expr><Enter> pumvisible() ? \"\<C-Y>" : \"\<Enter>"
 " 类似于AutoComplPop用法 .
-let g:neocomplcache_enable_auto_select = 1
+"let g:neocomplcache_enable_auto_select = 1
 """""""""""""""""""""""""""""""""""""""""""""NEOCOMPLCACHE"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Enable omni completion.
@@ -946,6 +944,7 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTag
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTag
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
 """""""""""" Erlang """""""""""""""""""""
 let g:erlangManPath="/usr/lib/erlang/man"
@@ -1012,3 +1011,8 @@ let g:splitjoin_join_mapping = ''
 
 nnoremap <silent> <leader>j :SplitjoinJoin<cr>
 nnoremap <silent> <leader>s :SplitjoinSplit<cr>
+
+let g:ycm_confirm_extra_conf = 0
+
+let g:phpcomplete_add_class_extensions = ['mongo']
+let g:phpcomplete_add_function_extensions = ['mongo']
