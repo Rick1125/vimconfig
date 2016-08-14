@@ -26,10 +26,6 @@
 	path = bundle/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
 
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
-
 [submodule "bundle/splice"]
 	path = bundle/splice
 	url = https://github.com/sjl/splice.vim.git
@@ -37,10 +33,6 @@
 [submodule "bundle/vikitask"]
 	path = bundle/vikitask
 	url = https://github.com/tomtom/vikitasks_vim.git
-
-[submodule "bundle/erlang-skeletons"]
-	path = bundle/erlang-skeletons
-	url = https://github.com/aerosol/vim-erlang-skeletons
 
 [submodule "bundle/nerdtreetabs"]
 	path = bundle/nerdtreetabs
@@ -88,9 +80,6 @@
 [submodule "bundle/viki"]
 	path = bundle/viki
 	url = https://github.com/tomtom/viki_vim.git
-[submodule "bundle/rebar"]
-	path = bundle/rebar
-	url = https://github.com/mbbx6spp/vim-rebar.git
 [submodule "bundle/tlib"]
 	path = bundle/tlib
 	url = https://github.com/tomtom/tlib_vim
@@ -163,9 +152,6 @@
 [submodule "bundle/easytags"]
 	path = bundle/easytags
 	url = https://github.com/xolox/vim-easytags.git
-[submodule "bundle/ack"]
-	path = bundle/ack
-	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion
@@ -199,9 +185,6 @@
 [submodule "bundle/splitjoin"]
 	path = bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim
-[submodule "bundle/json"]
-	path = bundle/json
-	url = https://github.com/elzr/vim-json
 [submodule "bundle/clang_complete"]
 	path = bundle/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete
@@ -217,12 +200,27 @@
 [submodule "bundle/funcoo"]
 	path = bundle/funcoo
 	url = https://github.com/rizzatti/funcoo.vim
-[submodule "bundle/ag"]
-	path = bundle/ag
-	url = https://github.com/rking/ag.vim
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe
 [submodule "bundle/phpcomplete"]
 	path = bundle/phpcomplete
 	url = git://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux
+[submodule "bundle/autoclose"]
+	path = bundle/autoclose
+	url = https://github.com/spf13/vim-autoclose
+[submodule "bundle/tasklist"]
+	path = bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "bundle/neocomplete.vim"]
+	path = bundle/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go

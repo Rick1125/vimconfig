@@ -1,18 +1,19 @@
 OS := $(shell uname)
-type=unix
+type:=unix
+ifeq ($(OS), Darwin)
+type:=mac
+endif
 username="Rick1125"
 git_repository=git@github.com:Rick1125/vimconfig.git
 vimproc=bundle/vimproc/autoload/vimproc_$(type).so
 
 .PHONY: update install config
+
 all: $(vimproc)
 	git pull origin master
 	git submodule foreach git pull origin master
 
 $(vimproc): 
-ifeq ($(OS), Darwin)
-type=mac
-endif
 	(cd bundle/vimproc;make -f make_$(type).mak)
 
 update:

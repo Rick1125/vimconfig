@@ -165,7 +165,8 @@ if has("gui_running")
 	set guioptions-=L
 	set guioptions-=r
 	set guioptions-=R
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+  set guifont=Monaco:h14
+  "set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 
 	if MySys()=="win32"
 		"start gvim maximized
@@ -379,7 +380,7 @@ imap <D-$> <esc>$a
 imap <D-0> <esc>0i
 
 "remap escape key when insert mode
-inoremap jj <esc>
+inoremap jk <esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General Autocommand
@@ -406,8 +407,9 @@ vnoremap $< <esc>`>a><esc>`<i<<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "My information
-ia xdate <c-r>=strftime("%y-%m-%d %H:%M:%S")<cr>
+iab xdate <c-r>=strftime("%y-%m-%d %H:%M:%S")<cr>
 iab xname Rick Lee
+iab @@ rick1125@gmail.com
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings etc.
@@ -531,9 +533,9 @@ endif
 " => Text option
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python script
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set smarttab
 set lbr
@@ -712,7 +714,7 @@ map <F3> :Tlist<cr>
 map <F4> :NERDTreeToggle<cr>
 map <F8> <esc>:EnableFastPHPFolds<cr>
 map <C-F8> <esc>:DisablePHPFolds<cr>
-"map <F9> :e $HOME/.vimrc<cr>
+"map <F9> :e $MYVIMRC<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype generic
@@ -881,6 +883,10 @@ endif
 "vimshell
 nmap <leader><C-d> :vnew \| VimShell<cr>
 inoremap <C-d> exit
+"let g:loaded_vimshell=1
+if has("gui_running")
+  let g:vimshell_editor_command="/usr/local/bin/gvim"
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""NEOCOMPLCACHE"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "neocomplcache
@@ -961,7 +967,6 @@ let otl_use_thlnk=0
 
 "let g:loaded_unite=1
 "let g:loaded_neocomplcache=1
-"let g:loaded_vimshell=1
 
 "evervim developer token
 let g:evervim_devtoken='S=s1:U=abe9:E=142f096c047:C=13b98e59447:P=1cd:A=en-devtoken:H=a4bfe04e83ebb4feead845b30659c8f4'
@@ -1012,7 +1017,35 @@ let g:splitjoin_join_mapping = ''
 nnoremap <silent> <leader>j :SplitjoinJoin<cr>
 nnoremap <silent> <leader>s :SplitjoinSplit<cr>
 
-let g:ycm_confirm_extra_conf = 0
+" copy to clipboard
+nnoremap <silent> <leader>y "+y
+
+" let g:ycm_confirm_extra_conf = 0
 
 let g:phpcomplete_add_class_extensions = ['mongo']
 let g:phpcomplete_add_function_extensions = ['mongo']
+
+
+"""Vimux"""
+nmap <leader>vp :VimuxPromptCommand<cr>
+nmap <leader>vl :VimuxRunLastCommand<cr>
+nmap <leader>vq :VimuxCloseRunner<cr>
+
+"" autoclose disabled for vim comment
+let g:autoclose_vim_commentmode = 1
+
+"" Gundo Toggle
+nnoremap <silent> <leader>g :GundoToggle<cr>
+
+
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"
+" " If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+"" neocomplete
+let g:neocomplete#enable_at_startup = 1
